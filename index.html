@@ -10,10 +10,7 @@
       src="https://kit.fontawesome.com/ced8c5a454.js"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://kit.fontawesome.com/ced8c5a454.js"
-      crossorigin="anonymous"
-    ></script>
+ <link rel="stylesheet" href="./index.js">
   </head>
 
   <body>
@@ -33,22 +30,24 @@
             <a href="#" class="nav__link">Blog</a>
             <a href="#" class="nav__link">Pricing</a>
             <a href="#" class="nav__link">Contact Us</a>
-            <a href="#" class="nav__link login">Login</a>
+            <a href="#" class="nav__link nav__link--login">Login</a>
             <a href="#" class="nav__link nav__link--primary">Sign Up</a>
           </div>
-          <button class="btn__menu"></button>
+          <button class="btn__menu" onclick="openMenu()">
+           <i class="fa-solid fa-bars" ></i>
+          </button>
         </div>
       </nav>
 
       <div class="modal">
-        <button class="btn__menu btn__menu--close"></button>
+        <button class="btn__menu btn__menu--close" onclick="closeMenu()"><i class="fa-solid fa-x"></i></button>
         <div class="modal__links">
-          <a href="#" class="modal__link">About</a>
-          <a href="#" class="modal__link">Blog</a>
-          <a href="#" class="modal__link">Pricing</a>
-          <a href="#" class="modal__link">Contact Us</a>
-          <a href="#" class="modal__link">Login</a>
-          <a href="#" class="modal__link modal__link--primary">Sign Up</a>
+          <a href="" class="modal__link">About</a>
+          <a href="" class="modal__link">Blog</a>
+          <a href="" class="modal__link">Pricing</a>
+          <a href="" class="modal__link">Contact Us</a>
+          <a href="" class="modal__link">Login</a>
+          <a href="" class="modal__link modal__link--primary">Sign Up</a>
         </div>
       </div>
       <header>
@@ -416,7 +415,6 @@
                   <button class="plan__button">Buy Now</button>
                 </div>
               </div>
-              ---
             </div>
           </div>
         </div>
@@ -443,7 +441,13 @@
                 dolorum aut pariatur. Rem id blanditiis laudantium.
               </p>
               <div class="testimonial">
-                <div class="testimonial__rating"></div>
+                <div class="testimonial__rating">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
                 <h3 class="testimonial__title">Amazing User Experience</h3>
                 <p class="testimonial__para">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -468,9 +472,9 @@
                     </div>
                   </div>
                   <div class="testimonial__buttons">
-                    <button class="testimonial__button"></button>
+                    <button class="testimonial__button"><i class="fa-solid fa-arrow-left"></i></button>
                     <div class="divider"></div>
-                    <button class="testimonial__button"></button>
+                    <button class="testimonial__button"><i class="fa-solid fa-arrow-right"></i></button>
                   </div>
                 </div>
               </div>
@@ -501,39 +505,39 @@
         <div class="footer__columns">
           <div class="footer__column">
             <div class="footer__column--title">MAIN</div>
-            <a class="footer__column--link" href=""></a>
-            <a class="footer__column--link" href=""></a>
-            <a class="footer__column--link" href=""></a>
-            <a class="footer__column--link" href=""></a>
+            <a class="footer__column--link" href="">Blog</a>
+            <a class="footer__column--link" href="">FAQs</a>
+            <a class="footer__column--link" href="">Support</a>
+            <a class="footer__column--link" href="">About Us</a>
           </div>
           <div class="footer__column">
-            <div class="footer__column--title">MAIN</div>
-            <a class="footer__column--link" href=""></a>
-            <a class="footer__column--link" href=""></a>
-            <a class="footer__column--link" href=""></a>
-            <a class="footer__column--link" href=""></a>
+            <div class="footer__column--title">PRODUCT</div>
+            <a class="footer__column--link" href="">Log In</a>
+            <a class="footer__column--link" href="">Personal</a>
+            <a class="footer__column--link" href="">Business</a>
+            <a class="footer__column--link" href="">Team</a>
           </div>
 
           <div class="footer__column">
-            <div class="footer__column--title">MAIN</div>
-            <a class="footer__column--link" href=""></a>
-            <a class="footer__column--link" href=""></a>
-            <a class="footer__column--link" href=""></a>
-            <a class="footer__column--link" href=""></a>
+            <div class="footer__column--title">PRESS</div>
+            <a class="footer__column--link" href="">Logos</a>
+            <a class="footer__column--link" href="">Events</a>
+            <a class="footer__column--link" href="">Stories</a>
+            <a class="footer__column--link" href="">Office</a>
           </div>
           <div class="footer__column">
-            <div class="footer__column--title">MAIN</div>
-            <a class="footer__column--link" href=""></a>
-            <a class="footer__column--link" href=""></a>
-            <a class="footer__column--link" href=""></a>
-            <a class="footer__column--link" href=""></a>
+            <div class="footer__column--title">TEAM</div>
+            <a class="footer__column--link" href="">Career</a>
+            <a class="footer__column--link" href="">Founders</a>
+            <a class="footer__column--link" href="">Culture</a>
+            <a class="footer__column--link" href="">Onboarding</a>
           </div>
           <div class="footer__column">
-            <div class="footer__column--title">MAIN</div>
-            <a class="footer__column--link" href=""></a>
-            <a class="footer__column--link" href=""></a>
-            <a class="footer__column--link" href=""></a>
-            <a class="footer__column--link" href=""></a>
+            <div class="footer__column--title">LEGAL</div>
+            <a class="footer__column--link" href="">GDPR</a>
+            <a class="footer__column--link" href="">Privacy Policy</a>
+            <a class="footer__column--link" href="">Terms of Service</a>
+            <a class="footer__column--link" href="">Disclaimer</a>
           </div>
         </div>
         <div class="footer__divider"></div>
